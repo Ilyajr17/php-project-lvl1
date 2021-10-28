@@ -3,6 +3,15 @@ on: push
 jobs:
   my-job:
     runs-on: macos-latest
-    steps:
-      - name: my-step
+
+     steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+       
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0.8'
+      - name: Install
+        run: make install
+      - name: Run linter
         run: make lint
