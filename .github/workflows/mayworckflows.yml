@@ -1,7 +1,8 @@
 name: mayworckflows
-on: push
+on: 
+  -push
 jobs:
-  my-job:
+   build:
     runs-on: macos-latest
 
      steps:
