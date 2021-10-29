@@ -5,3 +5,6 @@
 
 #### make install:
 [![asciicast](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM.svg)](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM)
+
+#### run make brain-even:
+[![asciicast](https://asciinema.org/a/a6JP05kv1CaxaG9WNm9ccLxGm.svg)](https://asciinema.org/a/a6JP05kv1CaxaG9WNm9ccLxGm)
