@@ -5,8 +5,9 @@
 
 #### make install:
 [![asciicast](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM.svg)](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM)
-
 #### run make brain-even:
 [![asciicast](https://asciinema.org/a/a6JP05kv1CaxaG9WNm9ccLxGm.svg)](https://asciinema.org/a/a6JP05kv1CaxaG9WNm9ccLxGm)
 #### run make brain-calc:
-[![asciicast](https://asciinema.org/a/kP4vImM3M3ctnLJjlEPtEVZBs.svg)](https://asciinema.org/a/kP4vImM3M3ctnLJjlEPtEVZBs)
+[![asciicast](https://asciinema.org/a/de6eP9eqUns3oTH9NtfPt2nah.svg)](https://asciinema.org/a/de6eP9eqUns3oTH9NtfPt2nah)
+#### run make brain-gcd:
+[![asciicast](https://asciinema.org/a/YJHZgazww4Vjcp0EH89YxwOD7.svg)](https://asciinema.org/a/YJHZgazww4Vjcp0EH89YxwOD7)

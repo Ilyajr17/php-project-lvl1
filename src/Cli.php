@@ -12,5 +12,3 @@ function run()
     line("Hello, {$name}!");
     return $name;
 }
-
-

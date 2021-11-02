@@ -20,8 +20,6 @@ $name = run();
 
 line('What is the result of the expression?');
 
-
-
 for ($i = 0; $i < 3; $i++) {
 
     $firstNumber = rand(0, 5);
@@ -32,7 +30,7 @@ for ($i = 0; $i < 3; $i++) {
 
     $answerCalc = calc($firstNumber, $mathematicalOperation, $secondNumber);
 
-    line("Question: {$firstNumber} {$mathematicalOperation[0]} {$secondNumber}");
+    line("Question: $firstNumber $mathematicalOperation[0] $secondNumber");
 
     $answerUser = prompt("Your answer: ");
     if ($answerUser == $answerCalc) {
