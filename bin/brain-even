@@ -26,11 +26,11 @@ for ($i = 0; $i < 3; $i++) {
 
     line("Question: {$randomNumber}");
 
-    $answer = prompt("Your answer: ");
+    $answerUser = prompt("Your answer: ");
 
-    if ($answer == 'yes' && $randomNumber % 2 == 0) {
+    if ($answerUser == 'yes' && $randomNumber % 2 == 0) {
         line("Correct!");
-    } elseif ($answer == 'no' && $randomNumber % 2 !== 0) {
+    } elseif ($answerUser == 'no' && $randomNumber % 2 !== 0) {
         line("Correct!");
     } else {
         line("'yes' is wrong answer ;(. Correct answer was 'no'.");
