@@ -40,8 +40,6 @@ line("Congratulations, {$name}!");
 
 function progression()
 {
-
-    $arrayProgression = [];
     $startOfProgression = rand(0, 100);
     $lengthProgression = 10;
     $questionProgression = rand(0, 10);
@@ -60,5 +58,5 @@ function progression()
         }
     }
 
-    return $arrayProgression = [$progression, $answrProgression];
+    return  [$progression, $answrProgression];
 }
