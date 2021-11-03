@@ -11,3 +11,5 @@
 [![asciicast](https://asciinema.org/a/de6eP9eqUns3oTH9NtfPt2nah.svg)](https://asciinema.org/a/de6eP9eqUns3oTH9NtfPt2nah)
 #### run make brain-gcd:
 [![asciicast](https://asciinema.org/a/YJHZgazww4Vjcp0EH89YxwOD7.svg)](https://asciinema.org/a/YJHZgazww4Vjcp0EH89YxwOD7)
+#### run make brain-progression:
+[![asciicast](https://asciinema.org/a/Aq8DMVYUfssQ1x60ZQEyN9MWd.svg)](https://asciinema.org/a/Aq8DMVYUfssQ1x60ZQEyN9MWd)

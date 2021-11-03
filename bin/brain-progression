@@ -1,0 +1,64 @@
+#!/usr/bin/env php
+<?php
+
+use function BrainGames\Cli\run;
+
+use function cli\line;
+use function cli\prompt;
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+
+$name = run();
+
+line('What number is missing in the progression?');
+
+for ($i = 0; $i < 3; $i++) {
+
+    $arrayProgression = progression();
+
+    line("Question: $arrayProgression[0]");
+
+    $answerUser = prompt("Your answer: ");
+
+    if ($answerUser == $arrayProgression[1]) {
+        line("Correct!");
+    } else {
+        line("'$answerUser' is wrong answer ;(. Correct answer was '$arrayProgression[1]'.");
+        line("Let's try again, $name!");
+        exit;
+    }
+}
+line("Congratulations, {$name}!");
+
+function progression()
+{
+
+    $arrayProgression = [];
+    $startOfProgression = rand(0, 100);
+    $lengthProgression = 10;
+    $questionProgression = rand(0, 10);
+    $progression = '';
+    $stepProgression = rand(2, 3);
+
+    for ($i = 0; $i < $lengthProgression; $i++) {
+
+        $startOfProgression = $startOfProgression + $stepProgression;
+
+        if ($i == $questionProgression) {
+            $progression = "{$progression} ..";
+            $answrProgression = $startOfProgression;
+        } else {
+            $progression = "{$progression} {$startOfProgression}";
+        }
+    }
+
+    return $arrayProgression = [$progression, $answrProgression];
+}
