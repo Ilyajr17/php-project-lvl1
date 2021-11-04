@@ -1,5 +1,5 @@
 {
-    "name": "hexlet/code",
+    "name": "ilyajr17/php-project-lvl1",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
@@ -11,7 +11,13 @@
     "description": "hexlet/code",
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Engine.php",
+            "src/games/prime.php",
+            "src/games/progression.php",
+            "src/games/even.php",
+            "src/games/gcd.php",
+            "src/games/calc.php"
         ]
     },
     "license": "MIT",

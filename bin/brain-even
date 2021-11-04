@@ -1,10 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use function BrainGames\Cli\run;
-
-use function cli\line;
-use function cli\prompt;
+use function Brain\Games\games\even\evenGame;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 
@@ -16,27 +13,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$name = run();
-
-line('Answer "yes" if the number is even, otherwise answer "no"');
-
-for ($i = 0; $i < 3; $i++) {
-
-    $randomNumber = rand(0, 100);
-
-    line("Question: {$randomNumber}");
-
-    $answerUser = prompt("Your answer: ");
-
-    if ($answerUser == 'yes' && $randomNumber % 2 == 0) {
-        line("Correct!");
-    } elseif ($answerUser == 'no' && $randomNumber % 2 !== 0) {
-        line("Correct!");
-    } else {
-        line("'yes' is wrong answer ;(. Correct answer was 'no'.");
-        line("Let's try again, $name!");
-        exit;
-    }
-}
-
-line("Congratulations, {$name}!");
+evenGame();
