@@ -1,7 +1,10 @@
 #!/usr/bin/env php
 <?php
 
-use function Brain\Games\games\prime\primeGame;
+use function BrainGames\Cli\run;
+
+use function cli\line;
+use function cli\prompt;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 
@@ -13,6 +16,48 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
+$name = run();
 
-primeGame();
+line('Answer "yes" if given number is prime. Otherwise answer "no".');
+
+for ($i = 0; $i < 3; $i++) {
+
+    $primeNumber = prime();
+
+    line("Question: $primeNumber[0]");
+
+    $answerUser = prompt("Your answer: ");
+
+    if ($answerUser == $primeNumber[1]) {
+        line("Correct!");
+    } else {
+        line("'yes' is wrong answer ;(. Correct answer was 'no'.");
+        line("Let's try again, $name!");
+        exit;
+    }
+}
+
+line("Congratulations, {$name}!");
+
+function prime()
+{
+    $number = rand(2, 100);
+
+    $primeNumber = 'yes';
+
+    if ($number <= 3) {
+        $primeNumber = 'yes';
+    } else {
+        for ($i = 2; $i < $number; $i++) {
+            if ($number % $i == 0) {
+                $primeNumber = 'no';
+                break;
+            }
+        }
+    }
+
+
+
+    return [$number, $primeNumber];
+}
 

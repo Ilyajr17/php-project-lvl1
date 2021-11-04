@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use function Brain\Games\games\calc\calcGame;
 use function BrainGames\Cli\run;
 
 use function cli\line;
@@ -17,4 +16,46 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-calcGame();
+$name = run();
+
+line('What is the result of the expression?');
+
+for ($i = 0; $i < 3; $i++) {
+
+    $firstNumber = rand(0, 5);
+    $secondNumber = rand(0, 5);
+    $mathematicalOperation = ['+', '-', '*'];
+    shuffle($mathematicalOperation);
+    $mathematicalOperation[0];
+
+    $answerCalc = calc($firstNumber, $mathematicalOperation, $secondNumber);
+
+    line("Question: $firstNumber $mathematicalOperation[0] $secondNumber");
+
+    $answerUser = prompt("Your answer: ");
+    if ($answerUser == $answerCalc) {
+        line("Correct!");
+    } else {
+        line("'$answerUser' is wrong answer ;(. Correct answer was '$answerCalc'.");
+        line("Let's try again, $name!");
+        exit;
+    }
+}
+
+line("Congratulations, {$name}!");
+
+
+function calc($firstNumber, $mathematicalOperation, $secondNumber)
+{
+
+
+    switch ($mathematicalOperation[0]) {
+
+        case '+':
+            return $question =  "{$firstNumber}" + "{$secondNumber}";
+        case '-':
+            return $question = "{$firstNumber}" - "{$secondNumber}";
+        case '*':
+            return $question = "{$firstNumber}" * "{$secondNumber}";
+    }
+}

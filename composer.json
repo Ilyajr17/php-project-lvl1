@@ -1,21 +1,5 @@
 {
     "name": "hexlet/code",
-    "description": "ferst project",
-    "license": "MIT",
-    "autoload": {
-        "files": [
-            "src/Cli.php",
-            "src/Engine.php",
-            "src/games/prime.php",
-            "src/games/progression.php",
-            "src/games/even.php",
-            "src/games/gcd.php",
-            "src/games/calc.php"
-        ],
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
-    },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
@@ -24,12 +8,13 @@
         "bin/brain-progression",
         "bin/brain-prime"
     ],
-    "authors": [
-        {
-            "name": "Ilya Zherebtsov",
-            "email": "izherebcov@gmail.com"
-        }
-    ],
+    "description": "hexlet/code",
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+    "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"
     },
