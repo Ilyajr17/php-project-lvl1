@@ -1,5 +1,13 @@
 {
     "name": "ilyajr17/php-project-lvl1",
+    "type": "project",
+    "description": "hexlet/code",
+    "authors": [
+        {
+            "name": "ilya zherebtsov",
+            "email": "izherebcov@gamil.com"
+        }
+    ],
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
@@ -8,7 +16,7 @@
         "bin/brain-progression",
         "bin/brain-prime"
     ],
-    "description": "hexlet/code",
+  
     "autoload": {
         "files": [
             "src/Cli.php",
