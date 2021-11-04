@@ -3,10 +3,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 ![example workflow](https://github.com/Ilyajr17/php-project-lvl1/actions/workflows/worckflow.yml/badge.svg)
 
-#### Проект #1
-#### Игры разума
+#### project 1 
+#### brain games
+5 mini-games in the command line
 
-#### Установка
+#### installation
+clone the repository
+git clone https://github.com/Ilyajr17/php-project-lvl1.git
+
+composer initialization
+make install
 #### make install:
 [![asciicast](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM.svg)](https://asciinema.org/a/WwyelW8zzGNwXdVvksaDivzCM)
 #### run make brain-even:
