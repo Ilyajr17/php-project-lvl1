@@ -1,22 +1,7 @@
 {
     "name": "hexlet/code",
-    "type": "project",
-    "description": "hexlet/code",
-    "authors": [
-        {
-            "name": "ilya zherebtsov",
-            "email": "izherebcov@gamil.com"
-        }
-    ],
-    "bin": [
-        "bin/brain-games",
-        "bin/brain-even",
-        "bin/brain-calc",
-        "bin/brain-gcd",
-        "bin/brain-progression",
-        "bin/brain-prime"
-    ],
-  
+    "description": "ferst project",
+    "license": "MIT",
     "autoload": {
         "files": [
             "src/Cli.php",
@@ -26,9 +11,25 @@
             "src/games/even.php",
             "src/games/gcd.php",
             "src/games/calc.php"
-        ]
+        ],
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
     },
-    "license": "MIT",
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
+    ],
+    "authors": [
+        {
+            "name": "Ilya Zherebtsov",
+            "email": "izherebcov@gmail.com"
+        }
+    ],
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"
     },
