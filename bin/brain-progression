@@ -24,6 +24,8 @@ for ($i = 0; $i < 3; $i++) {
 
     $arrayProgression = progression();
 
+
+    
     line("Question: $arrayProgression[0]");
 
     $answerUser = prompt("Your answer: ");
@@ -44,7 +46,7 @@ function progression()
     $lengthProgression = 10;
     $questionProgression = rand(0, 10);
     $progression = '';
-    $stepProgression = rand(2, 3);
+    $stepProgression = rand(5, 7);
 
     for ($i = 0; $i < $lengthProgression; $i++) {
 
