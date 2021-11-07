@@ -59,6 +59,10 @@ function progression()
             $progression = "{$progression} {$startOfProgression}";
         }
     }
+   $progression = trim($progression);
+var_dump($progression);
+
+   // trim($progression);
 
     return  [$progression, $answrProgression];
 }
