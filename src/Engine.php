@@ -6,7 +6,7 @@ use function BrainGames\Cli\run;
 use function cli\line;
 use function cli\prompt;
 
-function engineGame($game, $conditionGame) : void
+function engineGame($game, $conditionGame): void
 {
     $name = run();
 
