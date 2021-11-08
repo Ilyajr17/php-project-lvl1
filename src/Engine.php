@@ -21,7 +21,7 @@ function engineGame(callable $game, string $conditionGame): void
 
         $answerUser = prompt("Your answer");
 
-        if ($answerUser !== $rightAnswer) {
+        if ($answerUser != $rightAnswer) {
             err("'$answerUser' is wrong answer ;(. Correct answer was '$rightAnswer'.");
             line("Let's try again, $name!");
             exit;
