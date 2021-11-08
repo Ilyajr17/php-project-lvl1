@@ -4,6 +4,8 @@ namespace  Brain\Games\games\progression;
 
 use function Brain\Games\engineGame;
 
+
+
 function progressionGame()
 {
     $conditionGame = 'What number is missing in the progression?';
@@ -15,7 +17,7 @@ function progressionGame()
         $progression = '';
         $stepProgression = rand(2, 3);
 
-        for ($i = 0; $i < $lengthProgression; $i++) {
+        for ($i = 0; $i <= $lengthProgression; $i++) {
             $startOfProgression = $startOfProgression + $stepProgression;
 
             if ($i == $questionProgression) {
