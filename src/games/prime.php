@@ -8,7 +8,7 @@ function primeGame(): void
 {
     $conditionGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-    $primeGame = function () {
+    $primeGame = function (): array {
         $number = rand(2, 100);
 
         $primeNumber = 'yes';
@@ -23,7 +23,7 @@ function primeGame(): void
                 }
             }
         }
-        return  $arrayGames = [$number, $primeNumber];
+        return [$number, $primeNumber];
     };
 
     engineGame($primeGame, $conditionGame);

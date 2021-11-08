@@ -8,7 +8,7 @@ function calcGame(): void
 {
     $conditionGame = 'What is the result of the expression?';
 
-    $calcGame = function () {
+    $calcGame = function (): array {
 
         $firstNumber = rand(0, 5);
         $secondNumber = rand(0, 5);

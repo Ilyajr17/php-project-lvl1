@@ -8,7 +8,7 @@ function progressionGame(): void
 {
     $conditionGame = 'What number is missing in the progression?';
 
-    $progressionGame = function () {
+    $progressionGame = function (): array {
         $startOfProgression = rand(0, 100);
         $lengthProgression = 10;
         $questionProgression = rand(0, 10);
@@ -28,7 +28,7 @@ function progressionGame(): void
 
         $progression = trim($progression);
 
-        return $arrayGames = [$progression, $answrProgression];
+        return [$progression, $answrProgression];
     };
 
     engineGame($progressionGame, $conditionGame);

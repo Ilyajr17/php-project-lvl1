@@ -8,7 +8,7 @@ function evenGame(): void
 {
     $conditionGame = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-    $evenGame = function () {
+    $evenGame = function (): array {
 
         $randomNumber = rand(0, 100);
 
@@ -18,7 +18,7 @@ function evenGame(): void
             $answerGames = 'no';
         }
 
-        return $arrayGames = [$randomNumber, $answerGames];
+        return [$randomNumber, $answerGames];
     };
     engineGame($evenGame, $conditionGame);
 }

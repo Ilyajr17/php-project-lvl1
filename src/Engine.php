@@ -13,16 +13,16 @@ function engineGame($game, $conditionGame): void
     line($conditionGame);
 
     for ($i = 0; $i < 3; $i++) {
-        $arrayGames = $game();
+        [$question, $rightAnswer] = $game();
 
-        line("Question: $arrayGames[0]");
+        line("Question: $question");
 
         $answerUser = prompt("Your answer");
 
-        if ($answerUser == $arrayGames[1]) {
+        if ($answerUser == $rightAnswer) {
             line("Correct!");
         } else {
-            line("'$answerUser' is wrong answer ;(. Correct answer was '$arrayGames[1]'.");
+            line("'$answerUser' is wrong answer ;(. Correct answer was '$rightAnswer'.");
             line("Let's try again, $name!");
             exit;
         }

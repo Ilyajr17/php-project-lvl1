@@ -9,17 +9,19 @@ function gcdGame(): void
 
     $conditionGame = 'Find the greatest common divisor of given numbers.';
 
-    $gcdGame = function () {
+    $gcdGame = function (): array {
 
-        $firstNumber = [3, 6, 9, 12, 15, 18, 24, 48, 50, 100];
-        shuffle($firstNumber);
-        $secondNumber = [3, 6, 9, 12, 15, 18, 24, 48, 50, 100];
-        shuffle($secondNumber);
-        $question = "{$firstNumber[0]} {$secondNumber[0]}";
+        $firstNumberRun = [3, 6, 9, 12, 15, 18, 24, 48, 50, 100];
+        shuffle($firstNumberRun);
+        $secondNumberRun = [3, 6, 9, 12, 15, 18, 24, 48, 50, 100];
+        shuffle($secondNumberRun);
+        $firstNumber = $firstNumberRun;
+        $secondNumber = $secondNumberRun;
+        $question = "{$firstNumber} {$secondNumber}";
 
         $answerCoorrect = findGcd($firstNumber[0], $secondNumber[0]);
 
-        return $arrayGames = [$question, $answerCoorrect];
+        return [$question, $answerCoorrect];
     };
 
     engineGame($gcdGame, $conditionGame);
