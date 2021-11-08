@@ -19,7 +19,7 @@ function gcdGame(): void
         $secondNumber = $secondNumberRun;
         $question = "{$firstNumber} {$secondNumber}";
 
-        $answerCoorrect = findGcd($firstNumber[0], $secondNumber[0]);
+        $answerCoorrect = findGcd($firstNumber, $secondNumber);
 
         return [$question, $answerCoorrect];
     };
