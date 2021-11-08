@@ -4,6 +4,24 @@ namespace  Brain\Games\games\calc;
 
 use function Brain\Games\engineGame;
 
+
+function calculate(string $mathematicalOperation, int $firstNumber, int $secondNumber): int
+{
+    if ($mathematicalOperation === '+') {
+        return ($firstNumber + $secondNumber);
+    }
+
+    if ($mathematicalOperation === '-') {
+        return ($firstNumber - $secondNumber);
+    }
+
+    if ($mathematicalOperation === '*') {
+        return ($firstNumber * $secondNumber);
+    }
+
+    return 0;
+}
+
 function calcGame(): void
 {
     $conditionGame = 'What is the result of the expression?';
@@ -15,21 +33,10 @@ function calcGame(): void
         $mathematicalOperationRundom = ['+', '-', '*'];
         shuffle($mathematicalOperationRundom);
         $mathematicalOperation = $mathematicalOperationRundom[0];
-        $answer = 0;
-
-        switch ($mathematicalOperation) {
-            case '+':
-                $answer =  $firstNumber + $secondNumber;
-                break;
-            case '-':
-                $answer = $firstNumber - $secondNumber;
-                break;
-            case '*':
-                $answer = $firstNumber * $secondNumber;
-                break;
-        }
 
         $question = "{$firstNumber} {$mathematicalOperation} {$secondNumber}";
+
+        $answer = calculate($mathematicalOperation, $firstNumber, $secondNumber);
 
         return [$question, $answer];
     };
