@@ -4,7 +4,7 @@ namespace  Brain\Games\games\prime;
 
 use function Brain\Games\engineGame;
 
-function primeGame()
+function primeGame(): void
 {
     $conditionGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

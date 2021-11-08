@@ -4,7 +4,7 @@ namespace  Brain\Games\games\gcd;
 
 use function Brain\Games\engineGame;
 
-function gcdGame()
+function gcdGame(): void
 {
 
     $conditionGame = 'Find the greatest common divisor of given numbers.';

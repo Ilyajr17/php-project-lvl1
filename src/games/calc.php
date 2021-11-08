@@ -4,7 +4,7 @@ namespace  Brain\Games\games\calc;
 
 use function Brain\Games\engineGame;
 
-function calcGame()
+function calcGame(): void
 {
     $conditionGame = 'What is the result of the expression?';
 
