@@ -31,4 +31,3 @@ function engineGame(callable $game, string $conditionGame): void
     }
     line("Congratulations, $name!");
 }
-
