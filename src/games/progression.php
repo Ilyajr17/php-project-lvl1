@@ -14,6 +14,7 @@ function progressionGame(): void
         $questionProgression = rand(0, 10);
         $progression = '';
         $stepProgression = rand(2, 3);
+        $answrProgression = 0;
 
         for ($i = 0; $i <= $lengthProgression; $i++) {
             $startOfProgression = $startOfProgression + $stepProgression;
