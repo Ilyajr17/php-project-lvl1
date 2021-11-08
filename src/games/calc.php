@@ -12,12 +12,12 @@ function calcGame(): void
 
         $firstNumber = rand(0, 5);
         $secondNumber = rand(0, 5);
-        $mathematicalOperation = ['+', '-', '*'];
-        shuffle($mathematicalOperation);
-        $mathematicalOperation[0];
+        $mathematicalOperationRundom = ['+', '-', '*'];
+        shuffle($mathematicalOperationRundom);
+        $mathematicalOperation = $mathematicalOperationRundom[0];
 
 
-        switch ($mathematicalOperation[0]) {
+        switch ($mathematicalOperation) {
             case '+':
                 $answer =  "{$firstNumber}" + "{$secondNumber}";
                 break;
@@ -29,7 +29,7 @@ function calcGame(): void
                 break;
         }
 
-        $question = "{$firstNumber} {$mathematicalOperation[0]} {$secondNumber}";
+        $question = "{$firstNumber} {$mathematicalOperation} {$secondNumber}";
 
         return [$question, $answer];
     };
