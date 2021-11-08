@@ -15,8 +15,8 @@ function gcdGame(): void
         shuffle($firstNumberRun);
         $secondNumberRun = [3, 6, 9, 12, 15, 18, 24, 48, 50, 100];
         shuffle($secondNumberRun);
-        $firstNumber = $firstNumberRun;
-        $secondNumber = $secondNumberRun;
+        $firstNumber = $firstNumberRun[0];
+        $secondNumber = $secondNumberRun[0];
         $question = "{$firstNumber} {$secondNumber}";
 
         $answerCoorrect = findGcd($firstNumber, $secondNumber);
