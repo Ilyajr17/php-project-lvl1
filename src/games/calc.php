@@ -31,7 +31,7 @@ function calcGame()
 
         $question = "{$firstNumber} {$mathematicalOperation[0]} {$secondNumber}";
 
-        return $arrayGames = [$question, $answer];
+        return [$question, $answer];
     };
     engineGame($calcGame, $conditionGame);
 }

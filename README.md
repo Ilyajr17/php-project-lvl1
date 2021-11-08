@@ -7,7 +7,7 @@
 #### brain games
 5 mini-games in the command line
 
-#### installation
+#### installation:
 clone the repository
 git clone https://github.com/Ilyajr17/php-project-lvl1.git
 make install
