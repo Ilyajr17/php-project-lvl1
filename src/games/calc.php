@@ -4,7 +4,6 @@ namespace  Brain\Games\games\calc;
 
 use function Brain\Games\engineGame;
 
-
 function calculate(string $mathematicalOperation, int $firstNumber, int $secondNumber): int
 {
     if ($mathematicalOperation === '+') {
