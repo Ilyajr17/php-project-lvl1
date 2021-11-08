@@ -15,17 +15,17 @@ function calcGame(): void
         $mathematicalOperationRundom = ['+', '-', '*'];
         shuffle($mathematicalOperationRundom);
         $mathematicalOperation = $mathematicalOperationRundom[0];
-
+        $answer = 0;
 
         switch ($mathematicalOperation) {
             case '+':
-                $answer =  "{$firstNumber}" + "{$secondNumber}";
+                $answer =  $firstNumber + $secondNumber;
                 break;
             case '-':
-                $answer = "{$firstNumber}" - "{$secondNumber}";
+                $answer = $firstNumber - $secondNumber;
                 break;
             case '*':
-                $answer = "{$firstNumber}" * "{$secondNumber}";
+                $answer = $firstNumber * $secondNumber;
                 break;
         }
 
