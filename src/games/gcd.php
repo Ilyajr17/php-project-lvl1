@@ -25,7 +25,7 @@ function gcdGame()
     engineGame($gcdGame, $conditionGame);
 }
 
-function findGcd($firstOperand, $secondOperand)
+function findGcd($firstOperand, $secondOperand): string
 {
     while ($firstOperand !== 0 && $secondOperand !== 0) {
         if ($firstOperand > $secondOperand) {
