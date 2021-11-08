@@ -2,6 +2,7 @@
 
 namespace Brain\Games;
 
+use function cli\err;
 use function cli\line;
 use function cli\prompt;
 
@@ -20,13 +21,14 @@ function engineGame(callable $game, string $conditionGame): void
 
         $answerUser = prompt("Your answer");
 
-        if ($answerUser == $rightAnswer) {
-            line("Correct!");
-        } else {
-            line("'$answerUser' is wrong answer ;(. Correct answer was '$rightAnswer'.");
+        if ($answerUser !== $rightAnswer) {
+            err("'$answerUser' is wrong answer ;(. Correct answer was '$rightAnswer'.");
             line("Let's try again, $name!");
             exit;
+        } else {
+            line("Correct!");
         }
     }
     line("Congratulations, $name!");
 }
+
